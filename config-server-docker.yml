@@ -1,7 +1,7 @@
 spring:
   profiles: docker
 eureka:
-  host: dockerdiscovery
+  host: discovery
   port: 8761
   instance:
     nonSecurePort: ${server.port:8888}
