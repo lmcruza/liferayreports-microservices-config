@@ -1,0 +1,12 @@
+spring:
+  profiles: docker
+
+eureka:
+  host: discovery
+  port: 8761
+  instance:
+    nonSecurePort: ${server.port:8888}
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
