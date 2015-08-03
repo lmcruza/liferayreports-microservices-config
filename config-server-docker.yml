@@ -1,6 +1,5 @@
 spring:
   profiles: docker
-
 eureka:
   host: discovery
   port: 8761
